@@ -1,0 +1,1095 @@
+/* ******* ******* ******* ******* ******* ******* ******* 
+UNIVERSAL 
+******* ******* ******* ******* ******* ******* ******* */
+:root {
+    --blue: #0070e9;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dd120c;
+    --orange: #ffaa4d;
+    --yellow: #ffcd1e;
+    --green: green;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #757575;
+    --gray-dark: #262626;
+    --black: #000;
+    --empress: #757575;
+    --jet: #323232;
+    --nero: #262626;
+    --cerise: #e20091;
+    --silver: #c5c5c5;
+    --white-smoke: #f2f2f2;
+    --primary: #0070e9;
+    --secondary: #757575;
+    --success: green;
+    --info: #0070e9;
+    --warning: #ffaa4d;
+    --danger: #dd120c;
+    --light: #f2f2f2;
+    --dark: #262626;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    font-size: 10px;
+    /* --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    /* font-family: "Helvetica Neue",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,Noto Sans,sans-serif; */
+    box-sizing: border-box;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ******* ******* ******* ******* ******* ******* ******* 
+NAVIGATION 
+******* ******* ******* ******* ******* ******* ******* */
+.global-menu-container {
+    height: 88px;
+    width: 1140px;
+    margin: auto;
+    background-color: black;
+    color: var(--white-smoke);
+    display: flex;
+}
+
+.menu-logo {
+    background-image: url(images/1-nav/favicon-225-225.png);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    height: 88px;
+    width: 225px;
+    background-position-y: center;
+    background-position-x: -30px;
+    margin-right: 100px;
+}
+
+.menu-search-bar-container {
+    flex-grow: 1; /* Allow for the search bar to grow while other stay normal */
+    background-color: white;
+    margin: auto;
+    height: 39px;
+    display: flex;
+}
+
+.menu-search-bar {
+    height: 39px;
+    width: 100%;
+    display: inline;
+    border: none;
+}
+
+.menu-search-bar:focus { /* get rid of the outline when clicking on the search field */
+    outline: none;
+}
+
+.search-bar-logo {
+    border: none;
+    background-color: white;
+    width: 39px;
+    height: 39px;
+}
+
+.search-bar-exit {
+    border: none;
+    background-color: white;
+    width: 39px;
+    height: 39px;
+}
+
+/* .menu-account-logo {
+
+} */
+
+.menu-sign-in {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 90px;
+}
+
+.menu-wishlist {
+    width: 50px;
+    position: relative;
+    font-size: 4.0rem;
+    margin: 0 24px;
+    padding-top: 11px;
+}
+
+.menu-shopping-bag {
+    width: 50px;  
+    position: relative;
+    font-size: 4.0rem;
+    padding-top: 11px;
+}
+
+/* GLOBAL NAVIGATION _________________________________________________________________________ */
+
+.global-nav {
+    background-color: var(--black);
+    color: var(--white);
+    position: relative;
+}
+
+
+
+.global-menu-container:hover {
+    color: var(--white);
+}
+
+.nav-items-container {
+    list-style: none;
+    align-items: center;
+    width: 1140px;
+    margin: auto;
+    height: 56px;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+.nav-item {
+    height: 56px;
+    padding-top: 20px;
+}
+
+.nav-item-link {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 400;
+}
+
+/* POPUP NAVIGATION _________________________________________________________________________ */
+.nav-dropdown-wrapper {
+    position: absolute;
+    top: 144px;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    color: black;
+    font-size: 1.4rem;
+    box-shadow: 0 3px 5px #2b2419;
+    z-index: 1;
+
+}
+
+
+/* Hover over the nav item to pop up */
+.nav-dropdown-one,
+.nav-dropdown-two,
+.nav-dropdown-three,  
+.nav-dropdown-four,
+.nav-dropdown-five, 
+.nav-dropdown-six, 
+.nav-dropdown-seven, 
+.nav-dropdown-eight, 
+.nav-dropdown-nine {
+    display: none;
+    transition-delay: 2s;
+    transition-property: display;
+}
+
+.nav-item-one:hover .nav-dropdown-one,
+.nav-item-two:hover .nav-dropdown-two,
+.nav-item-three:hover .nav-dropdown-three,
+.nav-item-four:hover .nav-dropdown-four,
+.nav-item-five:hover .nav-dropdown-five,
+.nav-item-six:hover .nav-dropdown-six,
+.nav-item-seven:hover .nav-dropdown-seven,
+.nav-item-eight:hover .nav-dropdown-eight,
+.nav-item-nine:hover .nav-dropdown-nine   {
+    display: block;
+    transition-delay: 0s;
+}
+
+.nav-item-ten {
+    position: relative;
+}
+
+.nav-item-ten svg {
+    position: absolute;
+    left: 20%;
+    top: 75%;
+}
+
+
+/* Dropdown image */
+.dropdown-one-image {
+    background-image: url(images/1-nav/nav-social-180-150.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-two-image-one {
+    background-image: url(images/1-nav/lush-valentines-gift-guide-nav-promo.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-two-image-two {
+    background-image: url(images/1-nav/Featured-product-up.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-two-image-three {
+    background-image: url(images/1-nav/gift-quiz-promo.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-three-image {
+    background-image: url(images/1-nav/Nav-promo-adventuresinbathing.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-four-image-one {
+    background-image: url(images/1-nav/NakedPackaging-Haircare2021-HomepageBanner-Mobile.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-four-image-two {
+    background-image: url(images/1-nav/nav-hair-quiz.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-five-image-one {
+    background-image: url(images/1-nav/aloe-nav-promo-block-174x145.jpg.png);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-five-image-two {
+    background-image: url(images/1-nav/ocean-salt-nav-promo-block-174x145.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-six-image-one {
+    background-image: url(images/1-nav/lime-bounty1-nav-promo-block-174x145.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-six-image-two {
+    background-image: url(images/1-nav/nav-hands.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-six-image-three {
+    background-image: url(images/1-nav/Image-dry.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-eight-image-one {
+    background-image: url(images/1-nav/fresh-as-nav.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-eight-image-two {
+    background-image: url(images/1-nav/SleepyLavenderPile_AYR_Social.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-nine-image-one {
+    background-image: url(images/1-nav/subscriptions-190x190.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-nine-image-two {
+    background-image: url(images/1-nav/MicrosoftTeams-image\ \(14\).png);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+.dropdown-nine-image-three {
+    background-image: url(images/1-nav/vday-mobil.jpg);
+    background-size: 180px 150px;
+    background-position: center;
+    width: 180px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+.dropdown-container {
+    height: auto;
+    width: 1140px;
+    margin: auto;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0 20px 0;
+}
+
+.dropdown-large-column {
+    list-style: none;
+    width: 300px;
+}
+
+.dropdown-small-column {
+    list-style: none;
+    width: 200px;
+}
+
+.dropdown-large-column a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-small-column a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.dropdown-large-column a:hover {
+    text-decoration: underline;
+    color: var(--gray);
+}
+
+.dropdown-small-column a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-column-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.dropdown-column-item {
+    margin: 0 0 10px 0;
+    width: 250px;
+}
+
+
+
+.dropdown-column-item-highlight {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.dropdown-column-item-highlight-fill {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    background-color: var(--silver);
+    width: 180px;
+    height: auto;
+    margin-top: 0;
+    padding: 10px 0 10px 10px;
+}
+
+
+
+
+/* ******* ******* ******* ******* ******* ******* ******* 
+MAIN CONTENT 
+******* ******* ******* ******* ******* ******* ******* */
+
+/* PROMOTION _________________________________________________________________________ */
+.hero-promotion {
+    background-color: var(--yellow);
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* HERO _________________________________________________________________________ */
+.hero-banner {
+    height: 370px;
+    background: url(images/2-hero/primary-hero-vday-22-1920-370.webp);
+    background-repeat: no-repeat;
+    background-size: calc(1920px*1.15) calc(370px*1.15);
+    background-position: center; /* Use this to center the image as windows changes size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+
+.hero-banner h1 {
+    font-size: 5.0rem;
+}
+
+.hero-banner p {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 10px 0 25px 0;
+}
+
+.main-hightlight-button { /* reusable */
+    background-color: #000;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .125em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid white;
+    height: 48px;
+    width: 275px;
+}
+
+.main-hightlight-button:hover {
+    animation-name: hero-banner-main-button;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-banner-main-button {
+    100% {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+/* SECTION BREAK _________________________________________________________________________ */
+.section-break {
+    height: 15px;
+}
+
+/* HERO SUB BANNER _________________________________________________________________________ */
+.hero-sub-banner-container {
+    display: flex;
+    height: 200px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.hero-sub-banner-image {
+    width: 50%;
+    background: url(images/2-hero/lush-valentines-giftguide-split-banner.webp);
+    background-repeat: no-repeat;
+    background-size: auto 210px;
+    background-position: center;
+}
+
+.hero-sub-banner-content-container {
+    padding: 0 35px;
+    background-color: #00479e;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-sub-banner-content-container h2 { 
+    font-size: 3.0rem;
+}
+
+
+.hero-sub-banner-content-container p { 
+    font-size: 1.6rem;
+    margin: 20px 0 20px 0;
+}
+
+.main-link { /* reusable */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    text-underline-offset: 0.3rem;
+}
+
+.medium-link { /* reusable */
+    color: white;
+    text-decoration: none;
+}
+
+.medium-link:hover { /* reusable */
+    text-decoration: underline;
+}
+
+/* PRODUCTS FEATURE _________________________________________________________________________ */
+.products-feature-container {
+    width: 1140px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.product-items-small {
+    width: 259px;
+    height: 145px;
+
+}
+
+.product-one {
+    background-image: url(images/3-content/Category-new-jan21-230-145.webp);
+    background-repeat: no-repeat;
+    background-size: 259px 145px;
+    background-position: center;
+}
+
+.product-two {
+    background-image: url(images/3-content/Category-Block-lipcare-230-145.jpg);
+    background-repeat: no-repeat;
+    background-size: 259px 145px;
+    background-position: center;
+}
+
+.product-three {
+    background-image: url(images/3-content/category-massage-bars-jan21-230-145.webp);
+    background-repeat: no-repeat;
+    background-size: 259px 145px;
+    background-position: center;
+}
+
+.product-four {
+    background-image: url(images/3-content/category-bubble-jan21-230-145.webp);
+    background-repeat: no-repeat;
+    background-size: 259px 145px;
+    background-position: center;
+}
+
+.title-small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 259px;
+    height: 145px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.column-large {
+    width: 550px;
+    height: 430px;
+}
+
+.product-five {
+    background-image: url(images/3-content/item-7-heroimage-square-1024-1024.jpg);
+    background-repeat: no-repeat;
+    background-size: 550px 430px;
+    background-position: center;
+}
+
+.product-six {
+    background-image: url(images/3-content/lush-vday-livestream-imagecard-548-430.webp);
+    background-repeat: no-repeat;
+    background-size: 550px 430px;
+    background-position: center;
+}
+
+.product-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 550px;
+    height: 430px;
+    padding: 50px;
+    font-weight: 600;
+}
+
+.section-title { /* reusable */
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+
+.section-description { /* reusable */
+    font-size: 2.0rem;
+    margin-bottom: 40px;
+}
+
+/* BUTTER FROM BRAZIL _________________________________________________________________________ */
+.section-container {
+    height: 370px;
+    background: url(images/3-content/beautifulbutters_topbanner_REV.jpg);
+    background-repeat: no-repeat;
+    background-size: calc(1920px*1.2) 370px;
+    background-position: center; /* Use this to center the image as windows changes size */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+/* SECTION: TRENDING NOW PRODUCT TILE _________________________________________________________________________ */
+.section-trending-container {
+    height: 554px;
+    width: 1140px;
+    margin: auto;
+}
+
+.product-tile-button-container {
+    display: flex;
+}
+
+.product-tile-nav-button {
+    width: 20px;
+}
+
+.product-tile-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.product-tile-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 240px;
+    margin: 0 15px;
+}
+
+.product-tile-badge-container{
+    height: 31px;
+    width: 146px;
+    background-color: var(--white-smoke);
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.product-tile-badge-text {
+    letter-spacing: 0.15rem;
+    font-size: 1.0rem;
+    padding-top: 8px;
+}
+
+.product-tile-image {
+    height: 180px;
+    width: 180px;
+    margin: 15px 0 5px 0;
+}
+
+.product-tile-image-one {
+    background-image: url(images/3-content/eggplant.webp);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+    background-position: center;
+}
+
+.product-tile-image-one:hover {
+    background-image: url(images/3-content/eggplan-hover.webp);
+}
+
+.product-tile-image-two {
+    background-image: url(images/3-content/lobster.jpg);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+    background-position: center;
+}
+
+.product-tile-image-two:hover {
+    background-image: url(images/3-content/lobster-hover.jpg);
+}
+
+.product-tile-image-three {
+    background-image: url(images/3-content/rose.webp);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+    background-position: center;
+}
+
+.product-tile-image-three:hover {
+    background-image: url(images/3-content/rose-hover.jpg);
+}
+
+.product-tile-image-four {
+    background-image: url(images/3-content/shower-gel.webp);
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+    background-position: center;
+}
+
+.product-tile-image-four:hover {
+    background-image: url(images/3-content/shower-gel-hover.webp);
+}
+
+.product-tile-rating {
+    margin-bottom: 15px;
+}
+
+.product-tile-rating-link {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+}
+
+.product-tile-rating-link:hover {
+    text-decoration: underline;
+}
+
+.product-tile-category {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.product-tile-title {
+    height: 90px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.product-tile-title-link {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.product-tile-title-link:hover {
+    text-decoration: underline;
+    color: var(--gray);
+}
+
+.product-tile-description {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.product-price-size-container {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-weight: 600;
+}
+
+.product-tile-button {
+    height: 48px;
+    width: 240px;
+    background-color: black;
+    color: white;
+}
+
+.product-tile-button:hover {
+    animation-name: product-tile-button;
+    animation-fill-mode: forwards;
+    animation-duration: 0.4s;
+}
+
+@keyframes product-tile-button {
+    100% {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+
+/* SECTION: NEW PRODUCT _________________________________________________________________________ */
+.section-new-product-container {
+    height: 554px;
+    background-color: #a2b7d0;
+    margin-bottom: 15px;
+}
+
+.section-new-product-content-container {
+    width: 1140px;
+    height: 554px;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-product-column {
+    width: 550px;
+    height: 408px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-product-image {
+    height: 408px;
+    width: 532px;
+    background-image: url(images/3-content/Featured-product-pouch-541-415.webp);
+    background-repeat: no-repeat;
+    background-size: 532px 408px;
+    background-position: center;
+}
+
+.small-title { /* reusable */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.flex-end {
+    align-self: center;
+    align-content: flex-end; /* Why doesnt this work? */
+}
+
+/* SECTION: VALUES _________________________________________________________________________ */
+.section-values-container {
+    height: 403px;
+    text-align: center;
+}
+
+
+/* ******* ******* ******* ******* ******* ******* ******* 
+FOOTER
+******* ******* ******* ******* ******* ******* ******* */
+.global-footer-container {
+    background-color: black;
+}
+
+.global-footer-content-container {
+    height: 550px;
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 60px;
+}
+
+.footer-column {
+    width: 550px;
+}
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-sub-column {
+    width: 275px;
+}
+
+.footer-column-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-links-container {
+    list-style-type: none;
+}
+
+.footer-links-container li {
+    margin-bottom: 12px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--silver);
+    font-size: 1.5rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+#footer-subscribe {
+    width:  175px;
+}
+
+
+.footer-subscribe-email { /* input styling */
+    width: 250px;
+    height: 48px;
+    margin: 10px 12px 25px 0;
+    padding-left: 10px;
+}
+
+.footer-subscribe-email::placeholder { /* placeholder styling */
+    letter-spacing: 0.03rem;
+    font-size: 1.5rem;
+}
+
+.footer-subscribe-email:active {
+    letter-spacing: 0.03rem;
+    font-size: 1.0rem;
+}
+
+.subscription-description {
+    font-size: 1.5rem;
+    color: var(--silver);
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.social-media-container {
+    display: flex;
+    height: 32px;
+    margin-bottom: 40px;
+}
+
+.social-media-container li {
+    height: 45px;
+    width: 45px;
+    list-style: none;
+}
+
+.social-media-container li a {
+    height: 50px;
+    width: 50px;
+} 
+
+.access-logo-container {
+    position: relative;
+    height: 35px;
+    width: auto;
+}
+
+.access-white-circle-1 {
+    height: 35px;
+    width: 47px;
+    background-color: white;
+    border-radius: 45%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.access-white-circle-2 {
+    height: 35px;
+    width: 47px;
+    background-color: white;
+    border-radius: 45%;
+    position: absolute;
+    left: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.access-white-circle-3 {
+    height: 25px;
+    width: 25px;
+    background-color: var(--gray-dark);
+    border-radius: 50%;
+    position: absolute;
+    left: 34.5px;
+    top: 5px;
+    z-index: 1;
+    font-size: 2.0rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION: LEGAL _________________________________________________________________________ */
+
+.global-footer-legal-container {
+    height: 75px;
+    color: var(--silver);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    border-top: 1px solid white;
+}
+
+.footer-legal-item {
+    padding: 0 20px;
+}
+
+.footer-legal-link {
+    text-decoration: none;
+    color: var(--silver)
+}
+
+.footer-legal-link:hover {
+    text-decoration: underline;
+    color: var(--gray)
+}
+
+.footer-legal-link-highlight {
+    text-decoration: none;
+    color: var(--silver)
+}
+
+.footer-legal-link-highlight:hover {
+    text-decoration: underline;
+    color: var(--primary)
+}
+

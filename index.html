@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Brad Salvatore">
+    <meta name="description" content="Lush provides the best and the most fresh handmade cosmetics">
+    <title>Brad S | Lush Fresh Handmade Cosmetics</title> <!-- Tab name  -->
+    <link rel="icon" href="images/1-nav/favicon-225-225.png" type="image/png" size="16x16"> <!-- Favicon -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Mobile Specfic --> 
+    <link rel="stylesheet" href="style.css"> <!-- CSS external sheet-->
+    
+</head>
+
+
+<body>
+<!-- NAV -->
+<header>
+
+<nav class="global-nav">
+
+    <div class="global-menu-container">
+        <div class="menu-logo"></div>
+        <div class="menu-search-bar-container">
+            <button class="search-bar-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="25" height="25"
+                viewBox="0 0 50 50"
+                style=" fill:#000000;"><path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
+                </svg>
+            </button>
+            
+            <input class="menu-search-bar" type="text" placeholder="I am looking for...">
+            
+            <button class="search-bar-exit">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="26" height="26"
+                viewBox="0 0 50 50"
+                style=" fill:#000000;"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="menu-account-logo"></div>
+        <div class="menu-sign-in">
+            <div><b>Welcome</b></div> 
+            <div> 
+                <span><a>Sign in</a></span>
+                <span> | </span>
+                <span>Register</span>
+            </div>
+        </div>
+        <div class="menu-wishlist"> &#128157;
+            <svg class="header-main__icon icon lush-icon-heart fill-white">
+                <title>wishlist-heart</title>
+                <use xlink:href="#lush-icon-heart"></use>
+                </svg>
+        </div>
+        <div class="menu-shopping-bag">&#128092;</div>
+    </div>
+
+    <ul class="nav-items-container space-between">
+
+        <li class="nav-item nav-item-one"> 
+            <a class="nav-item-link" href="#">Our Impact</a> 
+            <!-- 
+                dropdown for "Our Impact" 
+                put this whole dive under the list item, then use hover over the list item to activate
+            -->
+            <div class="nav-dropdown-wrapper nav-dropdown-one">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">OUR VALUES</li>
+                        <li class="dropdown-column-item"><a href="#">We Believe</a></li>
+                        <li class="dropdown-column-item"><a href="#">Handmade</a></li>
+                        <li class="dropdown-column-item"><a href="#">Freshest Cosmetics</a></li>
+                        <li class="dropdown-column-item"><a href="#">Ethical Buying</a></li>
+                        <li class="dropdown-column-item"><a href="#">Naked Packaging</a></li>
+                        <li class="dropdown-column-item"><a href="#">Fighting Animal Testing</a></li>
+                        <li class="dropdown-column-item"><a href="#">100% Vegetarian</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">IMPACT & ACTIVISM</li>
+                        <li class="dropdown-column-item"><a href="#">Sustainability</a></li>
+                        <li class="dropdown-column-item"><a href="#">Handmade</a></li>
+                        <li class="dropdown-column-item"><a href="#">Freshest Cosmetics</a></li>
+                        <li class="dropdown-column-item"><a href="#">Ethical Buying</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">FEATURED STORIES</li>
+                        <li class="dropdown-column-item"><a href="#">Black Lives Matter</a></li>
+                        <li class="dropdown-column-item"><a href="#">Cultivating Flourishing Ecosystem in Uganda</a></li>
+                        <li class="dropdown-column-item"><a href="#">Our Fresh Handmade Story</a></li>
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">All Stories</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <div class="dropdown-one-image"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">WE'RE LOGGING OFF</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+        <li class="nav-item nav-item-two"> 
+            <a class="nav-item-link" href="#">New</a></a> 
+            <!-- dropdown for "New"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-two ">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">All New</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">NEW</li>
+                        <li class="dropdown-column-item"><a href="#">Valentine's Day</a></li>
+                        <li class="dropdown-column-item"><a href="#">Winter skincare</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-two-image-one"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">VALENTINE'S DAY GIFT GUIDE</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-two-image-two"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">NEW BATH BOMBS</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-two-image-three"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">TAKE OUR GIFT QUIZ</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-item-three"> 
+            <a class="nav-item-link" href="#">Bath and Shower</a> 
+            <!-- dropdown for "Bath and Shower"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-three">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">All Bath & Shower</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">BATH</li>
+                        <li class="dropdown-column-item"><a href="#">Bath Bombs</a></li>
+                        <li class="dropdown-column-item"><a href="#">Bubble Bars</a></li>
+                        <li class="dropdown-column-item"><a href="#">Little Lushies</a></li>
+                        <li class="dropdown-column-item"><a href="#">Bath Oils</a></li>
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">Bestsellers in Bath</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">SHOWER</li>
+                        <li class="dropdown-column-item"><a href="#">Shower Gels and Jellies</a></li>
+                        <li class="dropdown-column-item"><a href="#">Bar Soap</a></li>
+                        <li class="dropdown-column-item"><a href="#">Body Scrubs</a></li>
+                        <li class="dropdown-column-item"><a href="#">Body BUtters and Conditioners</a></li>
+                        <li class="dropdown-column-item"><a href="#">Shower Bpmbs</a></li>
+                        <li class="dropdown-column-item"><a href="#">Shaving Creams</a></li>
+                        <li class="dropdown-column-item"><a href="#">Body Cleansers</a></li>
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">Bestsellers in Shower</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <div class="dropdown-three-image"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">ADVENTURES IN BATHING</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item nav-item-four"> 
+            <a class="nav-item-link" href="#">Hair</a>
+            <!-- dropdown for "Hair"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-four">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">All Hair</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">HAIR</li>
+                        <li class="dropdown-column-item"><a href="#">Shampoo Bars</a></li>
+                        <li class="dropdown-column-item"><a href="#">Shampoo</a></li>
+                        <li class="dropdown-column-item"><a href="#">Conditioners</a></li>
+                        <li class="dropdown-column-item"><a href="#">Hair Treatments</a></li>
+                        <li class="dropdown-column-item"><a href="#">Styling</a></li>
+                        <li class="dropdown-column-item"><a href="#">Henna Hair Dyes</a></li>
+                        <li class="dropdown-column-item"><a href="#">Curls, Coils and Texture</a></li>
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">Bestsellers in Hair</a></li>
+
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-four-image-one"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">GO NAKED!</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-four-image-two"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">TAKE THE HAIR QUIZ</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+        
+        <li class="nav-item nav-item-five">
+            <a class="nav-item-link" href="#">Face</a> 
+            <!-- dropdown for "Face"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-five">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">All Face</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">FACE</li>
+                        <li class="dropdown-column-item"><a href="#">Cleanser and Scrubs</a></li>
+                        <li class="dropdown-column-item"><a href="#">Moisturizers</a></li>
+                        <li class="dropdown-column-item"><a href="#">Toners</a></li>
+                        <li class="dropdown-column-item"><a href="#">Masks</a></li>
+                        <li class="dropdown-column-item"><a href="#">Makeup</a></li>
+                        <li class="dropdown-column-item"><a href="#">Lip Scrubs and Balms</a></li>
+                        <li class="dropdown-column-item"><a href="#">Oral Care</a></li>
+                        <li class="dropdown-column-item"><a href="#">Shaving</a></li>
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">Bestsellers in Face Care</a></li>
+
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-five-image-one"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">ALOE BAMBOO</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-five-image-two"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">OCEAN SALT</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-item-six"> 
+            <a class="nav-item-link" href="#">Body</a> 
+            <!-- dropdown for "Body"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-six ">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">All Body</a></li>
+                    </ul>
+                    <ul class="dropdown-large-column">
+                        <li class="dropdown-column-title">BODY</li>
+                        <li class="dropdown-column-item"><a href="#">Body Lotions</a></li>
+                        <li class="dropdown-column-item"><a href="#">Massage Bars</a></li>
+                        <li class="dropdown-column-item"><a href="#">Handcare</a></li>
+                        <li class="dropdown-column-item"><a href="#">Footcare</a></li>
+                        <li class="dropdown-column-item"><a href="#">Shaving Creams</a></li>
+                        <li class="dropdown-column-item"><a href="#">Deodorants and Dusting Powders</a></li>
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">Bestsellers in Body</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-six-image-one"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">VALENTINE'S DAY GIFT GUIDE</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-six-image-two"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">NEW BATH BOMBS</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-six-image-three"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">TAKE OUR GIFT QUIZ</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-item-seven"> 
+            <a class="nav-item-link" href="#">Gifts</a> 
+            <!-- dropdown for "Gifts"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-seven ">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">All Gifts</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">SHOP BY PRICE</li>
+                        <li class="dropdown-column-item"><a href="#">Gifts under $25</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts $25-$50</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts over $50</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">BY RECIPIENT</li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Her</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Him</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Them</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Kids</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">BY OCCASATION</li>
+                        <li class="dropdown-column-item"><a href="#">Birthday Gifts</a></li>
+                        <li class="dropdown-column-item"><a href="#">Thank you Gifts</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">EXTRAS</li>
+                        <li class="dropdown-column-item"><a href="#">Gift Cards</a></li>
+                        <li class="dropdown-column-item"><a href="#">Knot-Wraps</a></li>
+                        <li class="dropdown-column-item"><a href="#">Accessories</a></li>
+                        <li class="dropdown-column-item"><a href="#">Corporate Gifting</a></li>
+                        <li class="dropdown-column-item"><a href="#">Valentine's Day Gift Guide</a></li>
+                        <li class="dropdown-column-item dropdown-column-item-highlight"><a href="#">Take Our Gift Quiz</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-item-eight">
+            <a class="nav-item-link" href="#">Scent</a>
+            <!-- dropdown for "Scent"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-eight ">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">FRAGRANCES</li>
+                        <li class="dropdown-column-item"><a href="#">Gifts under $25</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts $25-$50</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts over $50</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">LUSH COLLECTIONS</li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Her</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Him</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Them</a></li>
+                        <li class="dropdown-column-item"><a href="#">Gifts for Kids</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">PRODUCTS BY SCENT</li>
+                        <li class="dropdown-column-item"><a href="#">Birthday Gifts</a></li>
+                        <li class="dropdown-column-item"><a href="#">Thank you Gifts</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-eight-image-one"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">FRESH AS</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-eight-image-two"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">SLEEPY COLLECTION</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item nav-item-nine"> 
+            <a class="nav-item-link" href="#">Discover</a> 
+            <!-- dropdown for "Discover"  -->
+            <div class="nav-dropdown-wrapper nav-dropdown-nine ">        
+                <div class="dropdown-container">
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">SERVICES</li>
+                        <li class="dropdown-column-item"><a href="#">Virtual Shopping</a></li>
+                        <li class="dropdown-column-item"><a href="#">Afterpay</a></li>
+                        <li class="dropdown-column-item"><a href="#">Subscription</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <li class="dropdown-column-title">PRODUCTS</li>
+                        <li class="dropdown-column-item"><a href="#">Bestsellers</a></li>
+                        <li class="dropdown-column-item"><a href="#">Online Exclusives</a></li>
+                        <li class="dropdown-column-item"><a href="#">Vegan</a></li>
+                        <li class="dropdown-column-item"><a href="#">Naked</a></li>
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-nine-image-one"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">SUBSCRIPTIONS</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-nine-image-two"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">HOW TO USE LUSH PRODUCTS</a></li>               
+                    </ul>
+                    <ul class="dropdown-small-column">
+                        <div class="dropdown-nine-image-three"></div>
+                        <li class="dropdown-column-item dropdown-column-item-highlight-fill"><a href="#">LIVE EVENTS</a></li>               
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="nav-item nav-item-ten"> 
+            <a class="nav-item-link" href="#">Valentine's Day</a>
+            <svg class="promo-link-underdash d-none d-lg-block mt-n3 mx-auto" width="49" height="6" viewBox="0 0 49 6">
+                <title>promo-underdash</title>
+                <g transform="translate(-754 -82)translate(778.465015 84.415659)rotate(-47)translate(-778.465015 -84.415659)translate(760.965015 65.915659)">
+                <path d="M3.2 0.3C3.9 1 4.7 1.8 5.5 2.7 14.2 12.7 22.6 23 32.8 31.5 33.6 32.2 34.4 33 34.7 34 36.3 39.5 27.9 33.6 27 32.8 24.3 30.5 22.1 27.7 19.7 25.1 16.3 21.7 13 18.1 9.7 14.5 6.9 11.4 3 8.2 1.2 4.3 0.5 2.7 1 0.5 3.2 0.3" fill="#AD034A"></path>
+                </g>
+            </svg>
+        </li>
+    </ul>
+
+    
+</nav>
+
+
+
+</header> 
+
+
+
+
+<!-- MAIN CONTENT -->
+<main>
+    <div id="hero" class="hero-promotion">Free ground shipping is back for all orders over $60!</div>
+    
+    <!-- hero -->
+    <div class="hero-banner">
+        <h1>Valentine's Day</h1>
+        <p>Say it with love and Lush</p>
+        <button class="main-hightlight-button">Shop Collection</button>
+    </div>
+
+    <div class="section-break"></div>
+
+    <div class="hero-sub-banner-container">
+        <div class="hero-sub-banner-image"></div>
+        <div class="hero-sub-banner-content-container">
+            <h2>Uncover Their Love Language</h2>
+            <p>A selection of gifts everyone will fall in love with</p>
+            <a class="main-link" href="#">shop now</a>
+        </div>
+    </div>
+
+    <div class="products-feature-container">
+        <div class="product-items product-one">
+            <div class="title-small"><a class="medium-link" href="#">New Products</a></div>
+        </div>
+        <div class="product-items product-two">
+            <div class="title-small"><a class="medium-link" href="#">Lipcare</a></div>
+        </div>
+        <div class="product-items product-three">
+            <div class="title-small"><a class="medium-link" href="#">Massage Bars</a></div>
+        </div>
+        <div class="product-items product-four">
+            <div class="title-small"><a class="medium-link" href="#">Bubble Bars</a></div>
+        </div>
+    </div>
+
+    <div class="products-feature-container">
+        <div class="product-items-large product-five">
+            <div class="product-content-container">
+                <h3 class="section-title">Winter Weather Wearing You Down?</h3>
+                <p class="section-description">We've got you covered with our skincare essentials</p>
+                <a class="main-link" href="#">shop winter essentials</a>
+            </div>
+        </div>
+        <div class="column-large product-six">
+            <div class="product-content-container">
+                <h3 class="section-title">Lush Live is Back!</h3>
+                <p class="section-description">Tune n February 3rd for an exclusive Valentine's Day event</p>
+                <a class="main-link" href="#">add to calendar</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <h3 class="section-title">Beautiful Butter from Brazil</h3>
+        <p class="section-description">Nourishing and protective for more thant just your skin</p>
+        <a class="main-link" href="#">learn more</a>
+    </div>
+
+    <!-- SECTION: PRODUCT TILE CAROUSEL, TRENDING NOW ________________________________________ -->
+    <div class="section-trending-container">
+        <h3 class="section-title">Trending Now</h3>
+
+        <div class="product-tile-button-container">
+            <button class="product-tile-nav-button button-backward"> < </button>      
+
+            <div class="product-tile-container">
+                <!-- TILE 1 -->
+                <div class="product-tile-content-container">
+                    <div class="product-tile-badge-container">
+                        <span class="product-tile-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <title>
+                                Valentines
+                                </title>
+                                <g fill="none" transform="translate(0 2)">
+                                <path fill="#FF2E63" d="M6.570984,2.065554 C6.741696,1.909554 6.918432,1.759554 7.08204,1.596354 C7.63017282,1.01777558 8.35738524,0.640924899 9.146154,0.526704 C10.3148172,0.325043433 11.4922028,0.833177692 12.147138,1.821864 C12.5241282,2.33085025 12.7542634,2.93350345 12.81249,3.564216 C12.8554712,4.0953887 12.7897834,4.62974958 12.619434,5.134698 C12.371439,5.85961637 12.0068735,6.53923542 11.540094,7.146792 C10.9055141,7.98469336 10.1865052,8.75516255 9.394398,9.446058 C8.51627497,10.2203473 7.59808597,10.9479757 6.643626,11.625936 C6.61095,11.649546 6.58749,11.66112 6.54777,11.6322 C5.25863132,10.7280236 4.04541626,9.72016984 2.9202,8.61867 C2.23924319,7.95221099 1.64249099,7.20484512 1.143276,6.39327 C0.809390783,5.8468444 0.568836287,5.24862954 0.431484,4.623174 C0.141061506,3.23812468 0.703783656,1.81323682 1.862214,1.000374 C2.46133547,0.594880584 3.18698015,0.419947432 3.905058,0.5079 C4.74465873,0.600689124 5.52413431,0.988265796 6.104856,1.6017 C6.248466,1.746738 6.389352,1.8945 6.530514,2.041932 C6.54765403,2.06276293 6.56310314,2.08492939 6.576714,2.10822 L6.570984,2.065554 Z"/>
+                                <path fill="#000" d="M6.58989,11.887446 C6.52366477,11.8860929 6.45958206,11.8637333 6.40689,11.823594 C5.10757313,10.9121709 3.884952,9.89603768 2.751246,8.78535 C2.05599681,8.10588726 1.44738412,7.34310612 0.939246,6.51435 C0.591268782,5.94577273 0.340948084,5.32294409 0.198666,4.671696 C-0.117868673,3.1911398 0.486287184,1.66539331 1.73061,0.802896 C2.37589486,0.366217036 3.1572676,0.177481234 3.930732,0.27147 C4.82439158,0.371087131 5.6541577,0.783116372 6.273648,1.43487 C6.3747,1.536432 6.474252,1.6395 6.573798,1.743576 C6.688932,1.640508 6.80457,1.53744 6.914172,1.427832 C7.49993752,0.813540742 8.27479548,0.413444361 9.114804,0.29154 C10.3704916,0.0748106511 11.6356074,0.620577325 12.3396,1.682706 C12.7411722,2.2264136 12.98664,2.86946297 13.049514,3.54246 C13.0958238,4.10559437 13.0265314,4.67225159 12.845892,5.207634 C12.5911358,5.95749335 12.214524,6.66023437 11.7312,7.2876 C11.0881731,8.1396576 10.3580578,8.92234714 9.552696,9.622974 C8.66873525,10.4030864 7.74419384,11.1359729 6.782934,11.818572 C6.72762698,11.8616195 6.65995515,11.8857634 6.58989,11.887446 Z M6.568758,2.349558 C6.49450335,2.33931048 6.42711001,2.30068356 6.380736,2.241792 L6.298278,2.142744 C6.17862,2.017554 6.058458,1.892364 5.936286,1.769184 C5.39531816,1.19250799 4.66558982,0.828803953 3.87945,0.744036 C3.76873947,0.73207235 3.65746902,0.726029745 3.546114,0.725934 C2.99301978,0.723370448 2.45204763,0.887923855 1.994064,1.198038 C0.91960178,1.95987139 0.397694412,3.28526056 0.664236,4.57515 C0.795831102,5.17497183 1.02694961,5.74852034 1.348002,6.271998 C1.83633127,7.06747595 2.42113047,7.79953196 3.089094,8.45151 C4.17604263,9.51727749 5.34746687,10.4933239 6.591894,11.37009 C7.50898444,10.7159186 8.39152606,10.0146185 9.235962,9.269016 C10.016806,8.58971574 10.724987,7.83115443 11.349108,7.00554 C11.8015672,6.41937507 12.1543765,5.76267939 12.393366,5.061828 C12.5544287,4.58725012 12.6165401,4.08470291 12.575868,3.585192 C12.5206176,2.99735306 12.3057314,2.43579955 11.954442,1.961244 C11.3522546,1.04153076 10.2594872,0.569726472 9.177138,0.762138 C8.43968822,0.86817051 7.76016484,1.22167245 7.250028,1.76466 C7.132878,1.880802 6.97212,2.031954 6.84894,2.14206 L6.754854,2.236614 C6.71105263,2.29831541 6.64371156,2.33918555 6.568758,2.349558 Z"/>
+                                <path fill="#FFA9DC" d="M10.518264,5.369538 C10.621518,5.275164 10.728414,5.184444 10.827366,5.085738 C11.1589012,4.73580376 11.5987442,4.50788017 12.075816,4.4388 C12.7826645,4.31683576 13.4947856,4.62417232 13.890918,5.22216 C14.1189358,5.53001427 14.2581308,5.89452136 14.29335,6.276 C14.3193428,6.59727218 14.2796129,6.92047201 14.176584,7.225884 C14.0265954,7.66433909 13.8061011,8.07539685 13.523784,8.44287 C13.1399667,8.94966284 12.7050822,9.41566887 12.225984,9.833544 C11.6948647,10.301863 11.1395116,10.7419593 10.56222,11.152014 C10.542456,11.166294 10.528266,11.173296 10.504242,11.1558 C9.7245286,10.6089185 8.99073799,9.99932796 8.310174,9.333096 C7.89829817,8.93000226 7.53735207,8.47797181 7.2354,7.987104 C7.03345192,7.65660785 6.88795556,7.29478619 6.804882,6.916488 C6.62921898,6.07876007 6.9695742,5.21693402 7.670238,4.725288 C8.03260628,4.48003112 8.47150004,4.3742239 8.905818,4.427418 C9.41363712,4.48353972 9.88509147,4.71795619 10.236336,5.088978 C10.323198,5.176704 10.40841,5.266074 10.49379,5.355252 C10.504932,5.366874 10.519422,5.378136 10.518264,5.369538 Z"/>
+                                <path fill="#000" d="M10.530468,11.414724 C10.4679979,11.4140318 10.4074035,11.393284 10.35762,11.35554 C9.56879252,10.8023878 8.82665542,10.1854784 8.13867,9.511014 C7.71321807,9.09473184 7.34077436,8.62752773 7.029786,8.119998 C6.81341046,7.76684987 6.65801789,7.37980146 6.57012,6.975072 C6.37044326,6.03966948 6.75270043,5.07593641 7.539258,4.531716 C7.87868293,4.30180784 8.27950002,4.17949277 8.689458,4.18070691 C8.77226239,4.18059257 8.85500912,4.18509156 8.937312,4.194192 C9.50052495,4.25638348 10.0235737,4.51583135 10.413876,4.926612 L10.545708,5.061966 C10.5682684,5.00685061 10.6048256,4.95857922 10.651764,4.921926 C11.021815,4.53501994 11.5106284,4.2829815 12.040434,4.20591 C12.1536897,4.19092975 12.2677962,4.18329579 12.382038,4.183056 C13.0665635,4.17719654 13.7076482,4.51780101 14.085942,5.08833 C14.3388658,5.43190121 14.4936061,5.83778073 14.533602,6.26253 C14.562558,6.61675643 14.5193005,6.97317429 14.40645,7.31019 C14.2495063,7.77359698 14.0168638,8.20779713 13.717974,8.59515 C13.3259434,9.11558583 12.880335,9.59340696 12.388482,10.02075 C11.8524533,10.4942562 11.2917069,10.9390219 10.708602,11.353176 C10.6572566,11.3920694 10.5948717,11.4136243 10.530468,11.414724 L10.530468,11.414724 Z M8.692968,4.67758712 C8.37990192,4.6763255 8.07375386,4.76966085 7.814646,4.945374 C7.20128326,5.38097964 6.90382054,6.13826409 7.056738,6.874866 C7.134076,7.22547478 7.2693304,7.56073536 7.456938,7.866858 C7.74739006,8.33942331 8.09503604,8.77434856 8.491998,9.161778 C9.13034353,9.7892652 9.81831291,10.3641853 10.5492,10.880934 C11.133966,10.429176 11.6244,10.038354 12.05799,9.651048 C12.523355,9.24552529 12.9457026,8.79313705 13.318344,8.301048 C13.5844094,7.95598554 13.79205,7.5696023 13.93299,7.157298 C14.025879,6.88449389 14.0619711,6.59556946 14.039046,6.308298 C14.007458,5.97207252 13.8844596,5.65090252 13.683378,5.379588 C13.3972651,4.93802037 12.9046165,4.67411764 12.378498,4.680588 C12.2871839,4.68070386 12.1959745,4.68677273 12.10545,4.698756 C11.6832577,4.7599582 11.2944093,4.96285699 11.002716,5.274156 C10.931232,5.34564 10.832208,5.437632 10.757208,5.5056 L10.704474,5.558922 C10.6606551,5.61876909 10.5917011,5.65508327 10.517562,5.657358 C10.4406056,5.65151379 10.3696205,5.6136861 10.321854,5.553066 L10.273812,5.495058 C10.206426,5.425332 10.134942,5.350332 10.061112,5.277084 C9.75180356,4.94597977 9.33384664,4.73700238 8.883378,4.68822 C8.82014651,4.68124219 8.75658326,4.67769699 8.692968,4.67758712 Z"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="product-tile-badge-text">VALENTINE'S DAY</span>    
+                    </div>
+
+                    <div class="product-tile-image product-tile-image-one"></div> 
+
+                    <div class="product-tile-rating"> <a href="#" class="product-tile-rating-link">&#9733; &#9733; &#9733; &#9733; &#9733; (15)</a> </div>
+                    <div class="product-tile-category">bath bomb</div>
+                    <div class="product-tile-title"><a href="" class="product-tile-title-link">big eggplant</a></div>
+                    <p class="product-tile-description">Nine inches of energizing foam</p>
+                    <div class="product-price-size-container">
+                        <span class="product-price"> $14.95</span>
+                        <span class="product-size"> / 13.4 oz</span>
+                    </div>
+                    <button class="product-tile-button">ADD TO CART</button>
+                </div>
+
+                <!-- TILE 2 -->
+                <div class="product-tile-content-container">
+                    <div class="product-tile-badge-container">
+                        <span class="product-tile-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <title>
+                                Valentines
+                                </title>
+                                <g fill="none" transform="translate(0 2)">
+                                <path fill="#FF2E63" d="M6.570984,2.065554 C6.741696,1.909554 6.918432,1.759554 7.08204,1.596354 C7.63017282,1.01777558 8.35738524,0.640924899 9.146154,0.526704 C10.3148172,0.325043433 11.4922028,0.833177692 12.147138,1.821864 C12.5241282,2.33085025 12.7542634,2.93350345 12.81249,3.564216 C12.8554712,4.0953887 12.7897834,4.62974958 12.619434,5.134698 C12.371439,5.85961637 12.0068735,6.53923542 11.540094,7.146792 C10.9055141,7.98469336 10.1865052,8.75516255 9.394398,9.446058 C8.51627497,10.2203473 7.59808597,10.9479757 6.643626,11.625936 C6.61095,11.649546 6.58749,11.66112 6.54777,11.6322 C5.25863132,10.7280236 4.04541626,9.72016984 2.9202,8.61867 C2.23924319,7.95221099 1.64249099,7.20484512 1.143276,6.39327 C0.809390783,5.8468444 0.568836287,5.24862954 0.431484,4.623174 C0.141061506,3.23812468 0.703783656,1.81323682 1.862214,1.000374 C2.46133547,0.594880584 3.18698015,0.419947432 3.905058,0.5079 C4.74465873,0.600689124 5.52413431,0.988265796 6.104856,1.6017 C6.248466,1.746738 6.389352,1.8945 6.530514,2.041932 C6.54765403,2.06276293 6.56310314,2.08492939 6.576714,2.10822 L6.570984,2.065554 Z"/>
+                                <path fill="#000" d="M6.58989,11.887446 C6.52366477,11.8860929 6.45958206,11.8637333 6.40689,11.823594 C5.10757313,10.9121709 3.884952,9.89603768 2.751246,8.78535 C2.05599681,8.10588726 1.44738412,7.34310612 0.939246,6.51435 C0.591268782,5.94577273 0.340948084,5.32294409 0.198666,4.671696 C-0.117868673,3.1911398 0.486287184,1.66539331 1.73061,0.802896 C2.37589486,0.366217036 3.1572676,0.177481234 3.930732,0.27147 C4.82439158,0.371087131 5.6541577,0.783116372 6.273648,1.43487 C6.3747,1.536432 6.474252,1.6395 6.573798,1.743576 C6.688932,1.640508 6.80457,1.53744 6.914172,1.427832 C7.49993752,0.813540742 8.27479548,0.413444361 9.114804,0.29154 C10.3704916,0.0748106511 11.6356074,0.620577325 12.3396,1.682706 C12.7411722,2.2264136 12.98664,2.86946297 13.049514,3.54246 C13.0958238,4.10559437 13.0265314,4.67225159 12.845892,5.207634 C12.5911358,5.95749335 12.214524,6.66023437 11.7312,7.2876 C11.0881731,8.1396576 10.3580578,8.92234714 9.552696,9.622974 C8.66873525,10.4030864 7.74419384,11.1359729 6.782934,11.818572 C6.72762698,11.8616195 6.65995515,11.8857634 6.58989,11.887446 Z M6.568758,2.349558 C6.49450335,2.33931048 6.42711001,2.30068356 6.380736,2.241792 L6.298278,2.142744 C6.17862,2.017554 6.058458,1.892364 5.936286,1.769184 C5.39531816,1.19250799 4.66558982,0.828803953 3.87945,0.744036 C3.76873947,0.73207235 3.65746902,0.726029745 3.546114,0.725934 C2.99301978,0.723370448 2.45204763,0.887923855 1.994064,1.198038 C0.91960178,1.95987139 0.397694412,3.28526056 0.664236,4.57515 C0.795831102,5.17497183 1.02694961,5.74852034 1.348002,6.271998 C1.83633127,7.06747595 2.42113047,7.79953196 3.089094,8.45151 C4.17604263,9.51727749 5.34746687,10.4933239 6.591894,11.37009 C7.50898444,10.7159186 8.39152606,10.0146185 9.235962,9.269016 C10.016806,8.58971574 10.724987,7.83115443 11.349108,7.00554 C11.8015672,6.41937507 12.1543765,5.76267939 12.393366,5.061828 C12.5544287,4.58725012 12.6165401,4.08470291 12.575868,3.585192 C12.5206176,2.99735306 12.3057314,2.43579955 11.954442,1.961244 C11.3522546,1.04153076 10.2594872,0.569726472 9.177138,0.762138 C8.43968822,0.86817051 7.76016484,1.22167245 7.250028,1.76466 C7.132878,1.880802 6.97212,2.031954 6.84894,2.14206 L6.754854,2.236614 C6.71105263,2.29831541 6.64371156,2.33918555 6.568758,2.349558 Z"/>
+                                <path fill="#FFA9DC" d="M10.518264,5.369538 C10.621518,5.275164 10.728414,5.184444 10.827366,5.085738 C11.1589012,4.73580376 11.5987442,4.50788017 12.075816,4.4388 C12.7826645,4.31683576 13.4947856,4.62417232 13.890918,5.22216 C14.1189358,5.53001427 14.2581308,5.89452136 14.29335,6.276 C14.3193428,6.59727218 14.2796129,6.92047201 14.176584,7.225884 C14.0265954,7.66433909 13.8061011,8.07539685 13.523784,8.44287 C13.1399667,8.94966284 12.7050822,9.41566887 12.225984,9.833544 C11.6948647,10.301863 11.1395116,10.7419593 10.56222,11.152014 C10.542456,11.166294 10.528266,11.173296 10.504242,11.1558 C9.7245286,10.6089185 8.99073799,9.99932796 8.310174,9.333096 C7.89829817,8.93000226 7.53735207,8.47797181 7.2354,7.987104 C7.03345192,7.65660785 6.88795556,7.29478619 6.804882,6.916488 C6.62921898,6.07876007 6.9695742,5.21693402 7.670238,4.725288 C8.03260628,4.48003112 8.47150004,4.3742239 8.905818,4.427418 C9.41363712,4.48353972 9.88509147,4.71795619 10.236336,5.088978 C10.323198,5.176704 10.40841,5.266074 10.49379,5.355252 C10.504932,5.366874 10.519422,5.378136 10.518264,5.369538 Z"/>
+                                <path fill="#000" d="M10.530468,11.414724 C10.4679979,11.4140318 10.4074035,11.393284 10.35762,11.35554 C9.56879252,10.8023878 8.82665542,10.1854784 8.13867,9.511014 C7.71321807,9.09473184 7.34077436,8.62752773 7.029786,8.119998 C6.81341046,7.76684987 6.65801789,7.37980146 6.57012,6.975072 C6.37044326,6.03966948 6.75270043,5.07593641 7.539258,4.531716 C7.87868293,4.30180784 8.27950002,4.17949277 8.689458,4.18070691 C8.77226239,4.18059257 8.85500912,4.18509156 8.937312,4.194192 C9.50052495,4.25638348 10.0235737,4.51583135 10.413876,4.926612 L10.545708,5.061966 C10.5682684,5.00685061 10.6048256,4.95857922 10.651764,4.921926 C11.021815,4.53501994 11.5106284,4.2829815 12.040434,4.20591 C12.1536897,4.19092975 12.2677962,4.18329579 12.382038,4.183056 C13.0665635,4.17719654 13.7076482,4.51780101 14.085942,5.08833 C14.3388658,5.43190121 14.4936061,5.83778073 14.533602,6.26253 C14.562558,6.61675643 14.5193005,6.97317429 14.40645,7.31019 C14.2495063,7.77359698 14.0168638,8.20779713 13.717974,8.59515 C13.3259434,9.11558583 12.880335,9.59340696 12.388482,10.02075 C11.8524533,10.4942562 11.2917069,10.9390219 10.708602,11.353176 C10.6572566,11.3920694 10.5948717,11.4136243 10.530468,11.414724 L10.530468,11.414724 Z M8.692968,4.67758712 C8.37990192,4.6763255 8.07375386,4.76966085 7.814646,4.945374 C7.20128326,5.38097964 6.90382054,6.13826409 7.056738,6.874866 C7.134076,7.22547478 7.2693304,7.56073536 7.456938,7.866858 C7.74739006,8.33942331 8.09503604,8.77434856 8.491998,9.161778 C9.13034353,9.7892652 9.81831291,10.3641853 10.5492,10.880934 C11.133966,10.429176 11.6244,10.038354 12.05799,9.651048 C12.523355,9.24552529 12.9457026,8.79313705 13.318344,8.301048 C13.5844094,7.95598554 13.79205,7.5696023 13.93299,7.157298 C14.025879,6.88449389 14.0619711,6.59556946 14.039046,6.308298 C14.007458,5.97207252 13.8844596,5.65090252 13.683378,5.379588 C13.3972651,4.93802037 12.9046165,4.67411764 12.378498,4.680588 C12.2871839,4.68070386 12.1959745,4.68677273 12.10545,4.698756 C11.6832577,4.7599582 11.2944093,4.96285699 11.002716,5.274156 C10.931232,5.34564 10.832208,5.437632 10.757208,5.5056 L10.704474,5.558922 C10.6606551,5.61876909 10.5917011,5.65508327 10.517562,5.657358 C10.4406056,5.65151379 10.3696205,5.6136861 10.321854,5.553066 L10.273812,5.495058 C10.206426,5.425332 10.134942,5.350332 10.061112,5.277084 C9.75180356,4.94597977 9.33384664,4.73700238 8.883378,4.68822 C8.82014651,4.68124219 8.75658326,4.67769699 8.692968,4.67758712 Z"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="product-tile-badge-text">VALENTINE'S DAY</span>    
+                    </div>
+
+                    <div class="product-tile-image product-tile-image-two"></div> 
+
+                    <div class="product-tile-rating"> <a href="#" class="product-tile-rating-link">&#9733; &#9733; &#9733; &#9733; &#9733; (15)</a> </div>
+                    <div class="product-tile-category">bath bomb</div>
+                    <div class="product-tile-title"><a href="" class="product-tile-title-link">mr. loba loba</a></div>
+                    <p class="product-tile-description">Delicate, sweet foam</p>
+                    <div class="product-price-size-container">
+                        <span class="product-price">$5.45</span>
+                        <span class="product-size"> / 3.5 oz</span>
+                    </div>
+                    <button class="product-tile-button">ADD TO CART</button>
+                </div>
+
+                <!-- TILE 3 -->
+                <div class="product-tile-content-container">
+                    <div class="product-tile-badge-container">
+                        <span class="product-tile-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <title>
+                                Valentines
+                                </title>
+                                <g fill="none" transform="translate(0 2)">
+                                <path fill="#FF2E63" d="M6.570984,2.065554 C6.741696,1.909554 6.918432,1.759554 7.08204,1.596354 C7.63017282,1.01777558 8.35738524,0.640924899 9.146154,0.526704 C10.3148172,0.325043433 11.4922028,0.833177692 12.147138,1.821864 C12.5241282,2.33085025 12.7542634,2.93350345 12.81249,3.564216 C12.8554712,4.0953887 12.7897834,4.62974958 12.619434,5.134698 C12.371439,5.85961637 12.0068735,6.53923542 11.540094,7.146792 C10.9055141,7.98469336 10.1865052,8.75516255 9.394398,9.446058 C8.51627497,10.2203473 7.59808597,10.9479757 6.643626,11.625936 C6.61095,11.649546 6.58749,11.66112 6.54777,11.6322 C5.25863132,10.7280236 4.04541626,9.72016984 2.9202,8.61867 C2.23924319,7.95221099 1.64249099,7.20484512 1.143276,6.39327 C0.809390783,5.8468444 0.568836287,5.24862954 0.431484,4.623174 C0.141061506,3.23812468 0.703783656,1.81323682 1.862214,1.000374 C2.46133547,0.594880584 3.18698015,0.419947432 3.905058,0.5079 C4.74465873,0.600689124 5.52413431,0.988265796 6.104856,1.6017 C6.248466,1.746738 6.389352,1.8945 6.530514,2.041932 C6.54765403,2.06276293 6.56310314,2.08492939 6.576714,2.10822 L6.570984,2.065554 Z"/>
+                                <path fill="#000" d="M6.58989,11.887446 C6.52366477,11.8860929 6.45958206,11.8637333 6.40689,11.823594 C5.10757313,10.9121709 3.884952,9.89603768 2.751246,8.78535 C2.05599681,8.10588726 1.44738412,7.34310612 0.939246,6.51435 C0.591268782,5.94577273 0.340948084,5.32294409 0.198666,4.671696 C-0.117868673,3.1911398 0.486287184,1.66539331 1.73061,0.802896 C2.37589486,0.366217036 3.1572676,0.177481234 3.930732,0.27147 C4.82439158,0.371087131 5.6541577,0.783116372 6.273648,1.43487 C6.3747,1.536432 6.474252,1.6395 6.573798,1.743576 C6.688932,1.640508 6.80457,1.53744 6.914172,1.427832 C7.49993752,0.813540742 8.27479548,0.413444361 9.114804,0.29154 C10.3704916,0.0748106511 11.6356074,0.620577325 12.3396,1.682706 C12.7411722,2.2264136 12.98664,2.86946297 13.049514,3.54246 C13.0958238,4.10559437 13.0265314,4.67225159 12.845892,5.207634 C12.5911358,5.95749335 12.214524,6.66023437 11.7312,7.2876 C11.0881731,8.1396576 10.3580578,8.92234714 9.552696,9.622974 C8.66873525,10.4030864 7.74419384,11.1359729 6.782934,11.818572 C6.72762698,11.8616195 6.65995515,11.8857634 6.58989,11.887446 Z M6.568758,2.349558 C6.49450335,2.33931048 6.42711001,2.30068356 6.380736,2.241792 L6.298278,2.142744 C6.17862,2.017554 6.058458,1.892364 5.936286,1.769184 C5.39531816,1.19250799 4.66558982,0.828803953 3.87945,0.744036 C3.76873947,0.73207235 3.65746902,0.726029745 3.546114,0.725934 C2.99301978,0.723370448 2.45204763,0.887923855 1.994064,1.198038 C0.91960178,1.95987139 0.397694412,3.28526056 0.664236,4.57515 C0.795831102,5.17497183 1.02694961,5.74852034 1.348002,6.271998 C1.83633127,7.06747595 2.42113047,7.79953196 3.089094,8.45151 C4.17604263,9.51727749 5.34746687,10.4933239 6.591894,11.37009 C7.50898444,10.7159186 8.39152606,10.0146185 9.235962,9.269016 C10.016806,8.58971574 10.724987,7.83115443 11.349108,7.00554 C11.8015672,6.41937507 12.1543765,5.76267939 12.393366,5.061828 C12.5544287,4.58725012 12.6165401,4.08470291 12.575868,3.585192 C12.5206176,2.99735306 12.3057314,2.43579955 11.954442,1.961244 C11.3522546,1.04153076 10.2594872,0.569726472 9.177138,0.762138 C8.43968822,0.86817051 7.76016484,1.22167245 7.250028,1.76466 C7.132878,1.880802 6.97212,2.031954 6.84894,2.14206 L6.754854,2.236614 C6.71105263,2.29831541 6.64371156,2.33918555 6.568758,2.349558 Z"/>
+                                <path fill="#FFA9DC" d="M10.518264,5.369538 C10.621518,5.275164 10.728414,5.184444 10.827366,5.085738 C11.1589012,4.73580376 11.5987442,4.50788017 12.075816,4.4388 C12.7826645,4.31683576 13.4947856,4.62417232 13.890918,5.22216 C14.1189358,5.53001427 14.2581308,5.89452136 14.29335,6.276 C14.3193428,6.59727218 14.2796129,6.92047201 14.176584,7.225884 C14.0265954,7.66433909 13.8061011,8.07539685 13.523784,8.44287 C13.1399667,8.94966284 12.7050822,9.41566887 12.225984,9.833544 C11.6948647,10.301863 11.1395116,10.7419593 10.56222,11.152014 C10.542456,11.166294 10.528266,11.173296 10.504242,11.1558 C9.7245286,10.6089185 8.99073799,9.99932796 8.310174,9.333096 C7.89829817,8.93000226 7.53735207,8.47797181 7.2354,7.987104 C7.03345192,7.65660785 6.88795556,7.29478619 6.804882,6.916488 C6.62921898,6.07876007 6.9695742,5.21693402 7.670238,4.725288 C8.03260628,4.48003112 8.47150004,4.3742239 8.905818,4.427418 C9.41363712,4.48353972 9.88509147,4.71795619 10.236336,5.088978 C10.323198,5.176704 10.40841,5.266074 10.49379,5.355252 C10.504932,5.366874 10.519422,5.378136 10.518264,5.369538 Z"/>
+                                <path fill="#000" d="M10.530468,11.414724 C10.4679979,11.4140318 10.4074035,11.393284 10.35762,11.35554 C9.56879252,10.8023878 8.82665542,10.1854784 8.13867,9.511014 C7.71321807,9.09473184 7.34077436,8.62752773 7.029786,8.119998 C6.81341046,7.76684987 6.65801789,7.37980146 6.57012,6.975072 C6.37044326,6.03966948 6.75270043,5.07593641 7.539258,4.531716 C7.87868293,4.30180784 8.27950002,4.17949277 8.689458,4.18070691 C8.77226239,4.18059257 8.85500912,4.18509156 8.937312,4.194192 C9.50052495,4.25638348 10.0235737,4.51583135 10.413876,4.926612 L10.545708,5.061966 C10.5682684,5.00685061 10.6048256,4.95857922 10.651764,4.921926 C11.021815,4.53501994 11.5106284,4.2829815 12.040434,4.20591 C12.1536897,4.19092975 12.2677962,4.18329579 12.382038,4.183056 C13.0665635,4.17719654 13.7076482,4.51780101 14.085942,5.08833 C14.3388658,5.43190121 14.4936061,5.83778073 14.533602,6.26253 C14.562558,6.61675643 14.5193005,6.97317429 14.40645,7.31019 C14.2495063,7.77359698 14.0168638,8.20779713 13.717974,8.59515 C13.3259434,9.11558583 12.880335,9.59340696 12.388482,10.02075 C11.8524533,10.4942562 11.2917069,10.9390219 10.708602,11.353176 C10.6572566,11.3920694 10.5948717,11.4136243 10.530468,11.414724 L10.530468,11.414724 Z M8.692968,4.67758712 C8.37990192,4.6763255 8.07375386,4.76966085 7.814646,4.945374 C7.20128326,5.38097964 6.90382054,6.13826409 7.056738,6.874866 C7.134076,7.22547478 7.2693304,7.56073536 7.456938,7.866858 C7.74739006,8.33942331 8.09503604,8.77434856 8.491998,9.161778 C9.13034353,9.7892652 9.81831291,10.3641853 10.5492,10.880934 C11.133966,10.429176 11.6244,10.038354 12.05799,9.651048 C12.523355,9.24552529 12.9457026,8.79313705 13.318344,8.301048 C13.5844094,7.95598554 13.79205,7.5696023 13.93299,7.157298 C14.025879,6.88449389 14.0619711,6.59556946 14.039046,6.308298 C14.007458,5.97207252 13.8844596,5.65090252 13.683378,5.379588 C13.3972651,4.93802037 12.9046165,4.67411764 12.378498,4.680588 C12.2871839,4.68070386 12.1959745,4.68677273 12.10545,4.698756 C11.6832577,4.7599582 11.2944093,4.96285699 11.002716,5.274156 C10.931232,5.34564 10.832208,5.437632 10.757208,5.5056 L10.704474,5.558922 C10.6606551,5.61876909 10.5917011,5.65508327 10.517562,5.657358 C10.4406056,5.65151379 10.3696205,5.6136861 10.321854,5.553066 L10.273812,5.495058 C10.206426,5.425332 10.134942,5.350332 10.061112,5.277084 C9.75180356,4.94597977 9.33384664,4.73700238 8.883378,4.68822 C8.82014651,4.68124219 8.75658326,4.67769699 8.692968,4.67758712 Z"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="product-tile-badge-text">VALENTINE'S DAY</span>    
+                    </div>
+
+                    <div class="product-tile-image product-tile-image-three"></div> 
+
+                    <div class="product-tile-rating"> <a href="#" class="product-tile-rating-link">&#9733; &#9733; &#9733; &#9733; &#9733; (15)</a> </div>
+                    <div class="product-tile-category">bath bomb</div>
+                    <div class="product-tile-title"><a href="" class="product-tile-title-link">black rose</a></div>
+                    <p class="product-tile-description">A lemon-rose story</p>
+                    <div class="product-price-size-container">
+                        <span class="product-price"> $8.95</span>
+                        <span class="product-size"> / 6.7 oz</span>
+                    </div>
+                    <button class="product-tile-button">ADD TO CART</button>
+                </div>
+
+
+                <!-- TILE 4 -->
+                <div class="product-tile-content-container">
+                    <div class="product-tile-badge-container">
+                        <span class="product-tile-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                <title>
+                                Valentines
+                                </title>
+                                <g fill="none" transform="translate(0 2)">
+                                <path fill="#FF2E63" d="M6.570984,2.065554 C6.741696,1.909554 6.918432,1.759554 7.08204,1.596354 C7.63017282,1.01777558 8.35738524,0.640924899 9.146154,0.526704 C10.3148172,0.325043433 11.4922028,0.833177692 12.147138,1.821864 C12.5241282,2.33085025 12.7542634,2.93350345 12.81249,3.564216 C12.8554712,4.0953887 12.7897834,4.62974958 12.619434,5.134698 C12.371439,5.85961637 12.0068735,6.53923542 11.540094,7.146792 C10.9055141,7.98469336 10.1865052,8.75516255 9.394398,9.446058 C8.51627497,10.2203473 7.59808597,10.9479757 6.643626,11.625936 C6.61095,11.649546 6.58749,11.66112 6.54777,11.6322 C5.25863132,10.7280236 4.04541626,9.72016984 2.9202,8.61867 C2.23924319,7.95221099 1.64249099,7.20484512 1.143276,6.39327 C0.809390783,5.8468444 0.568836287,5.24862954 0.431484,4.623174 C0.141061506,3.23812468 0.703783656,1.81323682 1.862214,1.000374 C2.46133547,0.594880584 3.18698015,0.419947432 3.905058,0.5079 C4.74465873,0.600689124 5.52413431,0.988265796 6.104856,1.6017 C6.248466,1.746738 6.389352,1.8945 6.530514,2.041932 C6.54765403,2.06276293 6.56310314,2.08492939 6.576714,2.10822 L6.570984,2.065554 Z"/>
+                                <path fill="#000" d="M6.58989,11.887446 C6.52366477,11.8860929 6.45958206,11.8637333 6.40689,11.823594 C5.10757313,10.9121709 3.884952,9.89603768 2.751246,8.78535 C2.05599681,8.10588726 1.44738412,7.34310612 0.939246,6.51435 C0.591268782,5.94577273 0.340948084,5.32294409 0.198666,4.671696 C-0.117868673,3.1911398 0.486287184,1.66539331 1.73061,0.802896 C2.37589486,0.366217036 3.1572676,0.177481234 3.930732,0.27147 C4.82439158,0.371087131 5.6541577,0.783116372 6.273648,1.43487 C6.3747,1.536432 6.474252,1.6395 6.573798,1.743576 C6.688932,1.640508 6.80457,1.53744 6.914172,1.427832 C7.49993752,0.813540742 8.27479548,0.413444361 9.114804,0.29154 C10.3704916,0.0748106511 11.6356074,0.620577325 12.3396,1.682706 C12.7411722,2.2264136 12.98664,2.86946297 13.049514,3.54246 C13.0958238,4.10559437 13.0265314,4.67225159 12.845892,5.207634 C12.5911358,5.95749335 12.214524,6.66023437 11.7312,7.2876 C11.0881731,8.1396576 10.3580578,8.92234714 9.552696,9.622974 C8.66873525,10.4030864 7.74419384,11.1359729 6.782934,11.818572 C6.72762698,11.8616195 6.65995515,11.8857634 6.58989,11.887446 Z M6.568758,2.349558 C6.49450335,2.33931048 6.42711001,2.30068356 6.380736,2.241792 L6.298278,2.142744 C6.17862,2.017554 6.058458,1.892364 5.936286,1.769184 C5.39531816,1.19250799 4.66558982,0.828803953 3.87945,0.744036 C3.76873947,0.73207235 3.65746902,0.726029745 3.546114,0.725934 C2.99301978,0.723370448 2.45204763,0.887923855 1.994064,1.198038 C0.91960178,1.95987139 0.397694412,3.28526056 0.664236,4.57515 C0.795831102,5.17497183 1.02694961,5.74852034 1.348002,6.271998 C1.83633127,7.06747595 2.42113047,7.79953196 3.089094,8.45151 C4.17604263,9.51727749 5.34746687,10.4933239 6.591894,11.37009 C7.50898444,10.7159186 8.39152606,10.0146185 9.235962,9.269016 C10.016806,8.58971574 10.724987,7.83115443 11.349108,7.00554 C11.8015672,6.41937507 12.1543765,5.76267939 12.393366,5.061828 C12.5544287,4.58725012 12.6165401,4.08470291 12.575868,3.585192 C12.5206176,2.99735306 12.3057314,2.43579955 11.954442,1.961244 C11.3522546,1.04153076 10.2594872,0.569726472 9.177138,0.762138 C8.43968822,0.86817051 7.76016484,1.22167245 7.250028,1.76466 C7.132878,1.880802 6.97212,2.031954 6.84894,2.14206 L6.754854,2.236614 C6.71105263,2.29831541 6.64371156,2.33918555 6.568758,2.349558 Z"/>
+                                <path fill="#FFA9DC" d="M10.518264,5.369538 C10.621518,5.275164 10.728414,5.184444 10.827366,5.085738 C11.1589012,4.73580376 11.5987442,4.50788017 12.075816,4.4388 C12.7826645,4.31683576 13.4947856,4.62417232 13.890918,5.22216 C14.1189358,5.53001427 14.2581308,5.89452136 14.29335,6.276 C14.3193428,6.59727218 14.2796129,6.92047201 14.176584,7.225884 C14.0265954,7.66433909 13.8061011,8.07539685 13.523784,8.44287 C13.1399667,8.94966284 12.7050822,9.41566887 12.225984,9.833544 C11.6948647,10.301863 11.1395116,10.7419593 10.56222,11.152014 C10.542456,11.166294 10.528266,11.173296 10.504242,11.1558 C9.7245286,10.6089185 8.99073799,9.99932796 8.310174,9.333096 C7.89829817,8.93000226 7.53735207,8.47797181 7.2354,7.987104 C7.03345192,7.65660785 6.88795556,7.29478619 6.804882,6.916488 C6.62921898,6.07876007 6.9695742,5.21693402 7.670238,4.725288 C8.03260628,4.48003112 8.47150004,4.3742239 8.905818,4.427418 C9.41363712,4.48353972 9.88509147,4.71795619 10.236336,5.088978 C10.323198,5.176704 10.40841,5.266074 10.49379,5.355252 C10.504932,5.366874 10.519422,5.378136 10.518264,5.369538 Z"/>
+                                <path fill="#000" d="M10.530468,11.414724 C10.4679979,11.4140318 10.4074035,11.393284 10.35762,11.35554 C9.56879252,10.8023878 8.82665542,10.1854784 8.13867,9.511014 C7.71321807,9.09473184 7.34077436,8.62752773 7.029786,8.119998 C6.81341046,7.76684987 6.65801789,7.37980146 6.57012,6.975072 C6.37044326,6.03966948 6.75270043,5.07593641 7.539258,4.531716 C7.87868293,4.30180784 8.27950002,4.17949277 8.689458,4.18070691 C8.77226239,4.18059257 8.85500912,4.18509156 8.937312,4.194192 C9.50052495,4.25638348 10.0235737,4.51583135 10.413876,4.926612 L10.545708,5.061966 C10.5682684,5.00685061 10.6048256,4.95857922 10.651764,4.921926 C11.021815,4.53501994 11.5106284,4.2829815 12.040434,4.20591 C12.1536897,4.19092975 12.2677962,4.18329579 12.382038,4.183056 C13.0665635,4.17719654 13.7076482,4.51780101 14.085942,5.08833 C14.3388658,5.43190121 14.4936061,5.83778073 14.533602,6.26253 C14.562558,6.61675643 14.5193005,6.97317429 14.40645,7.31019 C14.2495063,7.77359698 14.0168638,8.20779713 13.717974,8.59515 C13.3259434,9.11558583 12.880335,9.59340696 12.388482,10.02075 C11.8524533,10.4942562 11.2917069,10.9390219 10.708602,11.353176 C10.6572566,11.3920694 10.5948717,11.4136243 10.530468,11.414724 L10.530468,11.414724 Z M8.692968,4.67758712 C8.37990192,4.6763255 8.07375386,4.76966085 7.814646,4.945374 C7.20128326,5.38097964 6.90382054,6.13826409 7.056738,6.874866 C7.134076,7.22547478 7.2693304,7.56073536 7.456938,7.866858 C7.74739006,8.33942331 8.09503604,8.77434856 8.491998,9.161778 C9.13034353,9.7892652 9.81831291,10.3641853 10.5492,10.880934 C11.133966,10.429176 11.6244,10.038354 12.05799,9.651048 C12.523355,9.24552529 12.9457026,8.79313705 13.318344,8.301048 C13.5844094,7.95598554 13.79205,7.5696023 13.93299,7.157298 C14.025879,6.88449389 14.0619711,6.59556946 14.039046,6.308298 C14.007458,5.97207252 13.8844596,5.65090252 13.683378,5.379588 C13.3972651,4.93802037 12.9046165,4.67411764 12.378498,4.680588 C12.2871839,4.68070386 12.1959745,4.68677273 12.10545,4.698756 C11.6832577,4.7599582 11.2944093,4.96285699 11.002716,5.274156 C10.931232,5.34564 10.832208,5.437632 10.757208,5.5056 L10.704474,5.558922 C10.6606551,5.61876909 10.5917011,5.65508327 10.517562,5.657358 C10.4406056,5.65151379 10.3696205,5.6136861 10.321854,5.553066 L10.273812,5.495058 C10.206426,5.425332 10.134942,5.350332 10.061112,5.277084 C9.75180356,4.94597977 9.33384664,4.73700238 8.883378,4.68822 C8.82014651,4.68124219 8.75658326,4.67769699 8.692968,4.67758712 Z"/>
+                                </g>
+                            </svg>
+                        </span>
+                        <span class="product-tile-badge-text">VALENTINE'S DAY</span>    
+                    </div>
+
+                    <div class="product-tile-image product-tile-image-four"></div> 
+
+                    <div class="product-tile-rating"> <a href="#" class="product-tile-rating-link">&#9733; &#9733; &#9733; &#9733; &#9733; (15)</a> </div>
+                    <div class="product-tile-category">shower gel</div>
+                    <div class="product-tile-title"><a href="" class="product-tile-title-link">i can resist everything but temptation</a></div>
+                    <p class="product-tile-description">Sweet, sharp, apple-scented</p>
+                    <div class="product-price-size-container">
+                        <span class="product-price"> $10.95</span>
+                        <span class="product-size"> / 3.8 fl. oz</span>
+                    </div>
+                    <button class="product-tile-button">SELECT SIZE</button>
+                </div>
+
+                <!-- TILE 5 -->
+                <div class="product-tile-content-container">
+                    <div class="product-tile-badge-container">
+                       <span class="product-tile-badge-text">NEW</span>    
+                    </div>
+
+                    <div class="product-tile-image product-tile-image-five"></div> 
+
+                    <div class="product-tile-rating"> <a href="#" class="product-tile-rating-link">&#9733; &#9733; &#9733; &#9733; &#9733; (15)</a> </div>
+                    <div class="product-tile-category">bath bomb</div>
+                    <div class="product-tile-title"><a href="" class="product-tile-title-link">luckt tiger</a></div>
+                    <p class="product-tile-description">Sweet, zesty, and golden</p>
+                    <div class="product-price-size-container">
+                        <span class="product-price"> $14.95</span>
+                        <span class="product-size"> / 13.4 oz</span>
+                    </div>
+                    <button class="product-tile-button">ADD TO CART</button>
+                </div>
+
+                
+            </div>
+
+            <button class="product-tile-nav-button button-forward"> > </button>
+        </div>
+    </div>
+
+
+    <!-- SECTION: NEW PRODUCT ________________________________________ -->
+    <div class="section-new-product-container">
+        <div class="section-new-product-content-container">
+            <div class="new-product-column">
+                <p class="small-title">new product</p>
+                <h3 class="section-title">The perfect pouch to hold your cruelty-free, 100% vegetarian goodies. Proudly raise awareness for the fight against animal testing with this organic and ethically-made cotton pouch.</h3>
+                <button class="main-hightlight-button flex-end">fighting animal testing cosmetics pouch</button>
+            </div>
+            <div class="new-product-column">
+                <div class="new-product-image"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-values-container">
+        <h3 class="section-title">Our values</h3>
+    </div>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="global-footer-container">
+    <div class="global-footer-content-container">
+        <div class="footer-column footer-flex">
+            <div class="footer-sub-column">
+                <h3 class="footer-column-title">Help</h3>
+                <ul class="footer-links-container">
+                    <li><a class="footer-link" href="#">Contact Us</a></li>
+                    <li><a class="footer-link" href="#">FAQ</a></li>
+                    <li><a class="footer-link" href="#">Shipping</a></li>
+                    <li><a class="footer-link" href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-sub-column">
+                <h3 class="footer-column-title">About</h3>
+                <ul class="footer-links-container">
+                    <li><a class="footer-link" href="#">Our Story</a></li>
+                    <li><a class="footer-link" href="#">Newsroom</a></li>
+                    <li><a class="footer-link" href="#">Careers</a></li>
+                    <li><a class="footer-link" href="#">Ways to shop</a></li>
+                    <li><a class="footer-link" href="#">Find a Shop</a></li>
+                    <li><a class="footer-link" href="#">Ingredient Finder</a></li>
+                    <li><a class="footer-link" href="#">Charitable Giving</a></li>
+                    <li><a class="footer-link" href="#">Corporate Gifting</a></li>
+                    <li><a class="footer-link" href="#">Covid-19 Updates</a></li>
+                    <li><a class="footer-link" href="#">Live Events</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-column-title">Get the freshest news, straight to your inbox!</h3>
+            <input class="footer-subscribe-email" type="email" id="email-subscribe" name="email-subscribe" placeholder="Enter your email address">
+            <span> <button id="footer-subscribe" class="main-hightlight-button">SUBSCRIBE</button> </span>
+            <p class="subscription-description">
+                You may opt out at any time. <br>
+                All emails will be sent by Lush Fresh Handmade Cosmetics, 8680 Cambie Street, Vancouver, British Columbia, Canada V6P 6M9, www.lushusa.com
+            </p>
+            <h3 class="footer-column-title">Join the conversation</h3>
+            <div class="social-media-container">
+                
+                <li>
+                    <a href="#" class="spotify">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="30" height="30"
+                        viewBox="0 0 40 40"
+                        style=" fill:#ffffff;">
+                        <path fill="#fff" d="M20,1.5C9.754,1.5,1.5,9.754,1.5,20S9.754,38.5,20,38.5c10.245,0,18.5-8.254,18.5-18.5 S30.245,1.5,20,1.5z"></path>
+                        <path fill="#000" d="M26.803,28.991c-0.27,0-0.541-0.134-0.811-0.27c-2.569-1.486-5.316-2.521-8.695-2.521	c-1.893,0-3.786,0.13-5.544,0.536c-0.27,0-0.676,0.135-0.811,0.135c-0.676,0-0.941-0.542-0.941-1.082	c0-0.675,0.265-1.082,0.806-1.215C12.969,24.031,15.133,24,17.43,24c3.786,0,6.938,1.069,9.912,2.83	c0.405,0.269,0.676,0.54,0.676,1.215C27.884,28.587,27.343,28.991,26.803,28.991z M28.648,24.031c-0.405,0-0.675-0.133-0.946-0.269	c-2.838-1.757-6.35-2.841-10.81-2.841c-2.164,0-4.191,0.271-5.679,0.678c-0.406,0.133-0.541,0.133-0.811,0.133	c-0.811,0-1.352-0.675-1.352-1.351c0-0.811,0.406-1.217,1.081-1.486C12.158,18.355,14.186,18,17.025,18	c4.597,0,8.649,1.031,12.164,3.193C29.729,21.462,30,22.004,30,22.544C30,23.356,29.459,24.031,28.648,24.031z M31.221,18.626	c-0.405,0-0.541-0.135-0.946-0.269c-3.245-1.893-8.111-2.976-12.844-2.976c-2.434,0-4.867,0.271-7.03,0.811	c-0.271,0-0.541,0.135-0.946,0.135c-0.946,0.135-1.622-0.675-1.622-1.622c0-0.946,0.541-1.486,1.216-1.622	C11.618,12.271,14.321,12,17.431,12c5.137,0,10.545,1.082,14.601,3.38c0.54,0.271,0.945,0.811,0.945,1.622	C32.844,17.949,32.167,18.626,31.221,18.626z"></path>
+                        </svg> 
+                    </a>           
+                </li>
+
+                <li>
+                    <a href="#" class="twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="31" height="31"
+                            viewBox="0 0 50 50"
+                            style=" fill:#ffffff;">
+                            <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
+                        </svg>
+                    </a>           
+                </li>
+
+
+                <li>
+                    <a href="#" class="youtube">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="48" height="37"
+                            viewBox="0 0 50 50"
+                            style=" fill:#ffffff;">
+                            <path fill-rule="evenodd" d="M 13 5 L 16 14 L 16 20 L 18 20 L 18 14 L 21 5 L 19 5 L 17 11 L 15 5 Z M 24 9 C 22.933594 9 22.410156 9.167969 21.757813 9.703125 C 21.132813 10.230469 20.960938 10.636719 21 12 L 21 17 C 21 17.996094 21.164063 18.652344 21.765625 19.234375 C 22.390625 19.816406 22.980469 20 24 20 C 25.066406 20 25.648438 19.816406 26.25 19.234375 C 26.875 18.675781 27 17.996094 27 17 L 27 12 C 27 11.117188 26.84375 10.28125 26.238281 9.722656 C 25.613281 9.148438 24.96875 9 24 9 Z M 29 9 L 29 18 C 29 18.972656 29.980469 20 31 20 C 32.019531 20 32.558594 19.488281 33 19 L 33 20 L 35 20 L 35 9 L 33 9 L 33 17 C 32.988281 17.683594 32.183594 18 32 18 C 31.792969 18 31 17.957031 31 17 L 31 9 Z M 24 11 C 24.300781 11 25 10.996094 25 12 L 25 17 C 25 17.96875 24.324219 18 24 18 C 23.699219 18 23 17.988281 23 17 L 23 12 C 23 11.183594 23.433594 11 24 11 Z M 10 22 C 6.40625 22 4 24.382813 4 28 L 4 37.5 C 4 41.117188 6.40625 44 10 44 L 40 44 C 43.59375 44 46 41.617188 46 38 L 46 28 C 46 24.382813 43.59375 22 40 22 Z M 12 26 L 18 26 L 18 28 L 16 28 L 16 40 L 14 40 L 14 28 L 12 28 Z M 26 26 L 28 26 L 28 30 C 28.230469 29.640625 28.574219 29.355469 28.902344 29.195313 C 29.222656 29.03125 29.546875 28.9375 29.875 28.9375 C 30.523438 28.9375 31.03125 29.171875 31.378906 29.609375 C 31.726563 30.050781 32 30.636719 32 31.5 L 32 37.5 C 32 38.242188 31.75 38.703125 31.421875 39.097656 C 31.101563 39.492188 30.621094 39.992188 30 40 C 28.949219 40.011719 28.386719 39.449219 28 39 L 28 40 L 26 40 Z M 18 29 L 20 29 L 20 37 C 20 37.230469 20.269531 38.007813 21 38 C 21.8125 37.992188 21.820313 37.234375 22 37 L 22 29 L 24 29 L 24 40 L 22 40 L 22 39 C 21.628906 39.4375 21.4375 39.574219 21.019531 39.78125 C 20.605469 40.015625 20.183594 40 19.792969 40 C 19.308594 40 18.757813 39.5625 18.5 39.234375 C 18.269531 38.933594 18 38.625 18 38 Z M 36.199219 29 C 37.148438 29 37.816406 29.203125 38.320313 29.734375 C 38.835938 30.265625 39 30.886719 39 31.886719 L 39 35 L 35 35 L 35 36.546875 C 35 37.105469 35.074219 37.460938 35.21875 37.671875 C 35.355469 37.902344 35.632813 38.003906 36 38 C 36.40625 37.996094 36.664063 37.914063 36.800781 37.730469 C 36.941406 37.566406 37 37.101563 37 36.5 L 37 36 L 39 36 L 39 36.59375 C 39 37.683594 38.914063 38.496094 38.375 39.027344 C 37.867188 39.585938 37.074219 39.84375 36.035156 39.84375 C 35.085938 39.84375 34.34375 39.5625 33.8125 38.984375 C 33.28125 38.40625 33.003906 37.613281 33.003906 36.59375 L 33.003906 31.886719 C 33.003906 30.980469 33.320313 30.308594 33.902344 29.710938 C 34.371094 29.230469 35.25 29 36.199219 29 Z M 29 30.5 C 28.449219 30.5 28.007813 30.996094 28 31.5 L 28 37.5 C 28.007813 37.789063 28.449219 38 29 38 C 29.550781 38 30 37.574219 30 37.023438 L 30 32 C 30 31 29.550781 30.5 29 30.5 Z M 36 31 C 35.449219 31 35.007813 31.464844 35 32 L 35 33 L 37 33 L 37 32 C 37 31.386719 36.550781 31 36 31 Z"></path>
+                        </svg>
+                    </a>           
+                </li>
+
+                <li>
+                    <a href="#" class="pinterest">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="-5px"
+                        width="45" height="45"
+                        viewBox="0 0 24 24"
+                        style=" fill:#ffffff;">
+                        <path d="M12.222,5.708c-4.316,0-6.608,2.898-6.608,6.052c0,1.467,0.781,3.292,2.03,3.874c0.189,0.088,0.291,0.05,0.334-0.133	c0.033-0.139,0.202-0.818,0.278-1.134c0.024-0.101,0.012-0.188-0.069-0.287c-0.413-0.502-0.744-1.423-0.744-2.282	c0-2.206,1.67-4.34,4.515-4.34c2.457,0,4.177,1.674,4.177,4.068c0,2.705-1.366,4.579-3.143,4.579c-0.982,0-1.717-0.812-1.481-1.807	c0.282-1.188,0.828-2.471,0.828-3.329c0-0.768-0.412-1.408-1.265-1.408c-1.003,0-1.809,1.037-1.809,2.428	c0,0.885,0.299,1.484,0.299,1.484s-0.991,4.191-1.173,4.971c-0.201,0.861-0.123,2.071-0.036,2.862	c0.226,0.088,0.451,0.177,0.685,0.249c0.408-0.664,1.017-1.753,1.243-2.621c0.122-0.468,0.623-2.378,0.623-2.378	c0.326,0.622,1.278,1.148,2.292,1.148c3.016,0,5.189-2.773,5.189-6.22C18.387,8.18,15.691,5.708,12.222,5.708z"></path>
+                        </svg>
+                    </a>           
+                </li>
+
+                <li>
+                    <a href="#" class="linkedini">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="45" height="38"
+                        viewBox="0 0 30 30"
+                        style=" fill:#ffffff;">    
+                        <path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"></path>
+                        </svg>
+                    </a>           
+                </li>
+            </ul>
+        
+            </div>
+
+        <p class="subscription-description">Accessibility tools:</p>
+        <div class="access-logo-container">
+            <div class="access-white-circle-1">
+                <svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" 
+                    width="25" height="25"
+                    viewBox="0 0 483.2226563 551.4306641" overflow="visible" enable-background="new 0 0 483.2226563 551.4306641"
+                    xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M161.9882813,98.1240234
+                    c24.9628906-2.3046875,44.3574219-23.8110352,44.3574219-48.9658203C206.3457031,22.0830078,184.2626953,0,157.1875,0
+                    s-49.1572266,22.0830078-49.1572266,49.1582031c0,8.2568359,2.3037109,16.7055664,6.1445313,23.8105469l17.515625,246.4667969
+                    l180.3964844,0.0488281l73.9912109,173.3652344l97.1445313-38.0976563l-15.0429688-35.8203125l-54.3662109,19.625
+                    l-71.5908203-165.2802734l-167.7294922,1.1269531l-2.3027344-31.2128906l121.4228516,0.0483398v-46.1831055l-126.0546875-0.0493164
+                    L161.9882813,98.1240234z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#000000" d="M343.4199219,451.5908203
+                    c-30.4472656,60.1875-94.1748047,99.8398438-162.1503906,99.8398438C81.4296875,551.4306641,0,470.0009766,0,370.1611328
+                    c0-70.1005859,42.4853516-135.2436523,105.8818359-164.1210938l4.1025391,53.5375977
+                    c-37.4970703,23.628418-60.6123047,66.262207-60.6123047,110.9506836c0,72.4267578,59.0712891,131.4970703,131.4970703,131.4970703
+                    c66.2617188,0,122.7646484-50.8515625,130.4697266-116.0869141L343.4199219,451.5908203z"/>
+                </svg>
+            </div>
+            <div class="access-white-circle-3">></div>
+            <div class="access-white-circle-2">
+                <svg version="1.1" id="Capa_1" 
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    width="20" height="22"
+                    x="0px" y="0px"
+                    viewBox="0 0 389.981 389.981" 
+                    style="enable-background:new 0 0 389.981 389.981;" xml:space="preserve">
+                    <g>
+                    <path d="M145.407,248.988l-2.775,26.209c-0.224,2.115,0.46,4.225,1.883,5.806c1.422,1.581,3.449,2.483,5.576,2.483h79.301
+                        c2.126,0,4.153-0.903,5.576-2.483c1.422-1.581,2.106-3.691,1.883-5.806l-2.775-26.209h98.777c15.374,0,27.881-12.507,27.881-27.881
+                        V27.881C360.733,12.507,348.225,0,332.852,0H40.63C25.256,0,12.749,12.507,12.749,27.881v193.226
+                        c0,15.374,12.507,27.881,27.881,27.881H145.407z M221.055,268.487h-62.629l2.064-19.499h58.5L221.055,268.487z M40.63,15h292.222
+                        c7.103,0,12.881,5.778,12.881,12.881V197.99H27.749V27.881C27.749,20.778,33.527,15,40.63,15z M27.749,221.107v-8.117h317.983
+                        v8.117c0,7.103-5.778,12.881-12.881,12.881H40.63C33.527,233.988,27.749,228.21,27.749,221.107z"/>
+                    <path d="M332.645,333.876c1.36-2.24,1.453-5.027,0.244-7.352l-14.813-28.499c-1.291-2.483-3.856-4.041-6.655-4.041H62.061
+                        c-2.798,0-5.364,1.558-6.655,4.041l-14.813,28.499c-1.208,2.325-1.116,5.112,0.244,7.352s3.791,3.607,6.411,3.607h278.986
+                        C328.854,337.484,331.285,336.116,332.645,333.876z M59.599,322.484l7.016-13.499h240.251l7.017,13.499H59.599z"/>
+                    <path d="M345.733,350.982h-12c-17.368,0-31.499,14.13-31.499,31.499c0,4.142,3.358,7.5,7.5,7.5h59.997c4.142,0,7.5-3.358,7.5-7.5
+                        C377.232,365.113,363.102,350.982,345.733,350.982z M319.04,374.981c2.735-5.337,8.295-8.999,14.693-8.999h12
+                        c6.398,0,11.958,3.662,14.694,8.999H319.04z"/>
+                    </g>
+                </svg>
+            </div>    
+        </div>
+        </div>
+    </div>
+
+
+    <div class="global-footer-legal-container">
+        <div class="footer-legal-item">
+            <a href="" class="footer-legal-link">Privacy Policy</a>
+        </div>
+        <span>|</span>
+        <div class="footer-legal-item">
+            <a href="" class="footer-legal-link">Terms & Conditions</a>
+        </div>
+        <span>|</span>
+        <div class="footer-legal-item">
+            <a href="" class="footer-legal-link-highlight">
+                <svg version="1.1" id="Layer_1" 
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15" height="15"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
+                    <g>
+                        <path style="fill:#D80027;" d="M244.87,256H512c0-23.106-3.08-45.49-8.819-66.783H244.87V256z"/>
+                        <path style="fill:#D80027;" d="M244.87,122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783H244.87V122.435z"/>
+                        <path style="fill:#D80027;" d="M256,512c60.249,0,115.626-20.824,159.356-55.652H96.644C140.374,491.176,195.751,512,256,512z"/>
+                        <path style="fill:#D80027;" d="M37.574,389.565h436.852c12.581-20.529,22.338-42.969,28.755-66.783H8.819
+                            C15.236,346.596,24.993,369.036,37.574,389.565z"/>
+                    </g>
+                    <path style="fill:#0052B4;" d="M118.584,39.978h23.329l-21.7,15.765l8.289,25.509l-21.699-15.765L85.104,81.252l7.16-22.037
+                        C73.158,75.13,56.412,93.776,42.612,114.552h7.475l-13.813,10.035c-2.152,3.59-4.216,7.237-6.194,10.938l6.596,20.301l-12.306-8.941
+                        c-3.059,6.481-5.857,13.108-8.372,19.873l7.267,22.368h26.822l-21.7,15.765l8.289,25.509l-21.699-15.765l-12.998,9.444
+                        C0.678,234.537,0,245.189,0,256h256c0-141.384,0-158.052,0-256C205.428,0,158.285,14.67,118.584,39.978z M128.502,230.4
+                        l-21.699-15.765L85.104,230.4l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822l-21.7,15.765L128.502,230.4z
+                        M120.213,130.317l8.289,25.509l-21.699-15.765l-21.699,15.765l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822
+                        L120.213,130.317z M220.328,230.4l-21.699-15.765L176.93,230.4l8.289-25.509l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822
+                        l-21.7,15.765L220.328,230.4z M212.039,130.317l8.289,25.509l-21.699-15.765l-21.699,15.765l8.289-25.509l-21.7-15.765h26.822
+                        l8.288-25.509l8.288,25.509h26.822L212.039,130.317z M212.039,55.743l8.289,25.509l-21.699-15.765L176.93,81.252l8.289-25.509
+                        l-21.7-15.765h26.822l8.288-25.509l8.288,25.509h26.822L212.039,55.743z"/>
+                    <g>
+                    </g>
+                </svg>
+                <span>Lush USA</span>  
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script><!-- JS external sheet-->
+</body>
+
+</html>
